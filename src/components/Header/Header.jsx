@@ -46,7 +46,7 @@ function Header() {
             </Link>
           </div>
           <ul className="flex ml-auto">
-            {navItems.map((item) => {
+            {navItems.map((item) =>
               item.active ? (
                 <li key={item.name}>
                   <button
@@ -56,8 +56,8 @@ function Header() {
                     {item.name}
                   </button>
                 </li>
-              ) : null;
-            })}
+              ) : null
+            )}
             {authStatus && (
               <li>
                 <LogoutBtn />
